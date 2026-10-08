@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Between the Lines</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- HEADER -->
+
+    <header class="chat-header">
+
+      <button class="back-btn" onclick="resetChat()">
+        ←
+      </button>
+
+      <div class="profile">
+
+        <div class="avatar">
+          <img src="profile/foto2.jpg" alt="">
+        </div>
+
+        <div>
+          <h1>Farel</h1>
+          <span id="status">active recently</span>
+        </div>
+
+      </div>
+
+      <button class="more-btn">
+        •••
+      </button>
+
+    </header>
+
+
+    <!-- CHAT -->
+
+    <main class="chat" id="chat">
+
+      <div class="date">
+        hari ini
+      </div>
+
+
+      <!-- INTRO -->
+
+      <div class="message-row received">
+
+        <div class="bubble">
+          kamu lagi sibuk, aku pengen ngomong nih?
+        </div>
+
+      </div>
+
+
+      <div class="message-row sent hidden">
+
+        <div class="bubble">
+          engga. kenapa?
+        </div>
+
+      </div>
+
+
+      <div class="message-row received hidden">
+
+        <div class="bubble">
+          gatau.
+          cuma pengen ngomong aja.
+        </div>
+
+      </div>
+
+
+      <div class="message-row received hidden">
+
+        <div class="bubble">
+          tapi agak aneh kalau langsung ngomong.
+        </div>
+
+      </div>
+
+
+      <!-- TYPING -->
+
+      <div class="typing hidden" id="typing">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </div>
+
+
+    </main>
+
+
+    <!-- CHOICES -->
+
+    <div class="choices" id="choices">
+
+      <button onclick="choiceOne()">
+        ngga, ngomong aja
+      </button>
+
+      <button onclick="choiceTwo()">
+        apatuh? penasaran
+      </button>
+
+      <button onclick="choiceThree()">
+        kalau ngga penting, nanti aja
+      </button>
+
+    </div>
+
+
+    <!-- INPUT AREA -->
+
+    <div class="input-area">
+
+      <div class="fake-input">
+        <span>type a message...</span>
+      </div>
+
+      <button class="send-btn">
+        ↑
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
